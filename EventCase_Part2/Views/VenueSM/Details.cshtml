@@ -1,0 +1,50 @@
+﻿@model EventCase_Part2.Models.VenueSM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VenueSM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VenueName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VenueName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image_Url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image_Url)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VenueID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

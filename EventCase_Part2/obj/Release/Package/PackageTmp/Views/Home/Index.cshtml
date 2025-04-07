@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ease Event Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #007FFF;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .jumbotron {
+            background-image: url('https://source.unsplash.com/1600x900/?azure,cloud');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            padding: 50px 20px;
+        }
+
+            .jumbotron h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .jumbotron p {
+                font-size: 1.5rem;
+            }
+
+        .btn-azure {
+            background-color: white;
+            color: #007FFF;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+            .btn-azure:hover {
+                background-color: #005BBB;
+                color: white;
+                border: 2px solid #005BBB;
+            }
+    </style>
+</head>
+<body>
+    <!-- Navbar with Event, Booking, and Venue -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Ease Event</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/Event">Event</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Booking">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Venue">Venue</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron Section -->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1> Event Ease</h1>
+            <p> Booking made easy</p>
+        </div>
+    </div>
+</body>
+</html>

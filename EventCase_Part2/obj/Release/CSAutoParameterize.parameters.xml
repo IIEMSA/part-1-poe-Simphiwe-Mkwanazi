@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="VenueSM-Web.config Connection String" description="VenueSM Connection String used in web.config by the application to access the database." defaultValue="data source=lab7L95SR\SQLEXPRESS;initial catalog=EventCaseDB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\lab_services_student\\Desktop\\EventCase\\EventCase\\EventCase_Part2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='VenueSM']/@connectionString" />
+  </parameter>
+  <parameter name="EventCaseDBContext-Web.config Connection String" description="EventCaseDBContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:eventcase.database.windows.net,1433;Initial Catalog=EventCase;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\lab_services_student\\Desktop\\EventCase\\EventCase\\EventCase_Part2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EventCaseDBContext']/@connectionString" />
+  </parameter>
+  <parameter name="EventCaseDB2Context-Web.config Connection String" description="EventCaseDB2Context Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:eventcase.database.windows.net,1433;Initial Catalog=EventCase;Persist Security Info=False;User ID=Simphiwe;Password={#Busi2004};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\lab_services_student\\Desktop\\EventCase\\EventCase\\EventCase_Part2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EventCaseDB2Context']/@connectionString" />
+  </parameter>
+</parameters>
